@@ -1,38 +1,164 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.App{
+  background-color: rgba(127, 206, 255, 0.726);
+  width: 90vw; /* Default width for mobile */
+  max-width: 1200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.App1 h1{
+  align-items: center;
+  background-color: aliceblue;
+  font-style: italic;
+  text-decoration: overline;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.divs{
+  margin-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sec{
+  margin: 20px auto;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sec-div{
+  /* background-color: aquamarine; */
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h4{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Times New Roman';
+}
+
+p{
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.child-div{
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.label{
+  font-size: 18px; /* Adjusted for mobile */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttoncls{
+  background-color: aliceblue;
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttoncls button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: medium;
+  transition: 0.4s ease-in-out;
+}
+
+.buttoncls button:hover{
+  background-color: rgba(127, 157, 255, 0.779);
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.check{
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: medium;
+}
+
+.divf{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.divf h3{
+  font-size: 30px;
+}
+
+.divq li{
+  font-size: large;
+  font-weight: 600;
+  padding: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+.restart{
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: medium;
+  transition: 0.4s ease-in-out;
+}
+
+.restart:hover{
+  background-color: rgba(127, 157, 255, 0.779);
+  font-size: large;
+  text-transform: capitalize;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 600px) {
+  /* Tablet */
+  .App{
+    width: 80vw;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Small Laptops */
+  .App{
+    width: 70vw;
+  }
+  
+  .label {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktops */
+  .App{
+    width: 50vw;
+  }
+  
+  .label {
+    font-size: 23px;
   }
 }
